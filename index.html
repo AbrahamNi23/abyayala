@@ -53,7 +53,7 @@
             width: 100%;
             z-index: 1000;
             backdrop-filter: blur(var(--blur-light));
-            background: rgba(245, 230, 211, 0.9);
+            background-color: var(--orange-red);
             transition: all 0.3s var(--transition-smooth);
             border-bottom: 2px solid var(--sea-green);
         }
@@ -74,15 +74,31 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             position: relative;
-            color: var(--dark-green);
+            color: var(--melon-cream);
             display: flex;
             align-items: center;
         }
 
-        .logo::before {
-            content: "🪶";
+        .logo img {
+            height: 40px;
             margin-right: var(--spacing-sm);
-            font-size: 1.8rem;
+            /* Se eliminó el filtro para mostrar el logo con sus colores originales */
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .logo-main {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            opacity: 0.8;
         }
 
         .nav-menu {
@@ -96,7 +112,7 @@
             padding: var(--spacing-sm) var(--spacing-md);
             cursor: pointer;
             transition: all 0.3s var(--transition-bounce);
-            color: var(--dark-green);
+            color: var(--melon-cream);
             font-weight: 500;
             border-radius: 30px;
         }
@@ -105,6 +121,11 @@
             background-color: var(--sea-green);
             color: var(--white);
             transform: translateY(-2px);
+        }
+
+        .nav-item a {
+            color: var(--melon-cream);
+            text-decoration: none;
         }
 
         /* Main Content */
@@ -538,7 +559,7 @@
         }
 
         .footer-section a:hover {
-            color: var(--orange-red);
+            color: var(--melon-cream);
         }
 
         .footer-bottom {
@@ -661,13 +682,38 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        /* Logo fallback styles */
+        .logo-fallback {
+            display: none;
+            width: 40px;
+            height: 40px;
+            margin-right: var(--spacing-sm);
+            background-color: var(--melon-cream);
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--orange-red);
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">Abya Yala</div>
+            <div class="logo">
+                <!-- Imagen principal con fallback -->
+                <img src="https://raw.githubusercontent.com/AbrahamNi23/abyayala/main/assets/ABYA%20YALA%20LOGO.png" 
+                     alt="Abya Yala Logo" 
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+                <div id="logo-fallback" class="logo-fallback">AY</div>
+                <div class="logo-text">
+                    <span class="logo-main">Abya Yala</span>
+                    <span class="logo-sub">Centro Cultural</span>
+                </div>
+            </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a href="#nosotros">Sobre nosotros</a></li>
