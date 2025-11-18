@@ -76,22 +76,6 @@ nav {
     margin-right: var(--spacing-sm);
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-}
-
-.logo-main {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo-sub {
-    font-size: 0.7rem;
-    opacity: 0.8;
-}
-
 .nav-menu {
     display: flex;
     gap: var(--spacing-lg);
@@ -146,32 +130,27 @@ main {
     background-image: url('https://raw.githubusercontent.com/AbrahamNi23/abyayala/main/assets/Mural%20horizontal%20Abya%20Yala-02.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.3;
+    opacity: 1; /* Eliminada la transparencia */
     z-index: 1;
 }
 
 .hero-content {
     text-align: center;
     z-index: 2;
-    position: relative;
+    position: absolute;
+    bottom: 60px; /* Posicionado en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
     max-width: 800px;
     padding: 0 var(--spacing-lg);
-}
-
-.hero-title {
-    font-size: clamp(2rem, 8vw, 5rem);
-    font-weight: 900;
-    margin-bottom: var(--spacing-lg);
-    letter-spacing: -2px;
-    color: var(--quaternary-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-xl);
-    color: var(--primary-color);
+    color: var(--quaternary-color);
     font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
 }
 
 .cta-button {
@@ -568,8 +547,9 @@ footer {
         gap: var(--spacing-sm);
     }
 
-    .hero-title {
-        font-size: 2.5rem;
+    .hero-content {
+        bottom: 30px; /* Ajustado para móviles */
+        padding: 0 var(--spacing-md);
     }
 
     .about-content,
