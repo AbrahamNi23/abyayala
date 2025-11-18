@@ -2,9 +2,9 @@
     /* Nueva paleta de colores */
     --primary-color: #D12420;      /* Rojo profundo */
     --secondary-color: #E66C3C;    /* Naranja rojizo */
-    --tertiary-color: #7AB7C1;     /* Azul verdoso */
+    --tertiary-color: #C7D4CA;     /* Verde grisáceo claro (intercambiado) */
     --quaternary-color: #21534C;   /* Verde oscuro */
-    --quinary-color: #C7D4CA;      /* Verde grisáceo claro */
+    --quinary-color: #7AB7C1;      /* Azul verdoso (intercambiado) */
     
     /* Transiciones */
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,7 +66,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     display: flex;
     align-items: center;
 }
@@ -103,7 +103,7 @@ nav {
     padding: var(--spacing-sm) var(--spacing-md);
     cursor: pointer;
     transition: all 0.3s var(--transition-bounce);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     font-weight: 500;
     border-radius: 30px;
 }
@@ -115,7 +115,7 @@ nav {
 }
 
 .nav-item a {
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -178,7 +178,7 @@ main {
     display: inline-block;
     padding: var(--spacing-md) var(--spacing-xl);
     background-color: var(--primary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
@@ -290,7 +290,7 @@ section {
 }
 
 .comarca-card {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -354,7 +354,7 @@ section {
 }
 
 .product-card {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -429,7 +429,7 @@ section {
 
 .event-content {
     width: 45%;
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     padding: var(--spacing-lg);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -440,7 +440,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: 50px;
     font-weight: bold;
@@ -465,14 +465,14 @@ section {
 }
 
 .contact-info {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     padding: var(--spacing-xl);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     padding: var(--spacing-xl);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -505,7 +505,7 @@ section {
 
 .submit-button {
     background-color: var(--primary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     border: none;
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: 50px;
@@ -521,7 +521,7 @@ section {
 /* Footer */
 footer {
     background-color: var(--quaternary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     padding: var(--spacing-xl) 0;
 }
 
@@ -545,13 +545,13 @@ footer {
 }
 
 .footer-section a {
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
     transition: color 0.3s var(--transition-smooth);
 }
 
 .footer-section a:hover {
-    color: var(--tertiary-color);
+    color: var(--quinary-color);
 }
 
 .footer-bottom {
@@ -597,7 +597,7 @@ footer {
 
 /* Audio Player */
 .audio-player {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     border-radius: 10px;
     padding: var(--spacing-md);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -618,7 +618,7 @@ footer {
 
 .play-button {
     background-color: var(--primary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     border: none;
     width: 40px;
     height: 40px;
@@ -646,7 +646,7 @@ footer {
 /* Newsletter */
 .newsletter {
     background-color: var(--tertiary-color);
-    color: var(--quinary-color);
+    color: var(--quaternary-color);
     padding: var(--spacing-xl);
     border-radius: 10px;
     text-align: center;
@@ -667,7 +667,7 @@ footer {
 
 .newsletter-button {
     background-color: var(--primary-color);
-    color: var(--quinary-color);
+    color: var(--tertiary-color);
     border: none;
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: 0 50px 50px 0;
@@ -681,7 +681,7 @@ footer {
     width: 40px;
     height: 40px;
     margin-right: var(--spacing-sm);
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
