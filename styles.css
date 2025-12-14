@@ -4,7 +4,7 @@
     --secondary-color: #E66C3C;    /* Naranja rojizo */
     --tertiary-color: #C7D4CA;     /* Verde grisáceo claro (intercambiado) */
     --quaternary-color: #21534C;   /* Verde oscuro */
-    --quinary-color: #7AB7C1;      /* Azul verdoso (intercambiado) */
+    --quinary-color: #FFFFFF;      /* Blanco (cambiado de azul verdoso) */
     
     /* Transiciones */
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,7 +34,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: all 0.5s var(--transition-smooth);
-    background-color: var(--quinary-color);
+    background-color: var(--quinary-color); /* Cambiado a blanco */
     color: var(--quaternary-color);
 }
 
@@ -132,7 +132,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, var(--quinary-color) 0%, #E8F0F2 100%);
+    background: linear-gradient(135deg, var(--quinary-color) 0%, #F8F9FA 100%); /* Fondo blanco actualizado */
     overflow: hidden;
 }
 
@@ -143,7 +143,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://raw.githubusercontent.com/AbrahamNi23/abyayala/main/assets/Presentaci%C3%B3n%20centro%20cultural.jpg');
+    background-image: url('https://raw.githubusercontent.com/AbrahamNi23/abyayala/refs/heads/main/assets/Presentaci%C3%B3n%20centro%20cultural%202.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -547,7 +547,7 @@ footer {
     text-align: center;
     margin-top: var(--spacing-lg);
     padding-top: var(--spacing-lg);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design - Mejorado para móvil */
